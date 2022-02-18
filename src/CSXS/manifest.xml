@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="5.0" ExtensionBundleId="de.vakago.warpqueue" ExtensionBundleVersion="11.1"
-                   ExtensionBundleName="WarpQueue"
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.cepangularstarter.helloworld" ExtensionBundleVersion="11.1"
+                   ExtensionBundleName="helloworld"
 >
   <ExtensionList>
-    <Extension Id="de.vakago.warpqueue" Version="1.0.2" />
+    <Extension Id="com.cepangularstarter.helloworld" Version="0.0.1" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
@@ -18,7 +18,7 @@
   </ExecutionEnvironment>
 
   <DispatchInfoList>
-    <Extension Id="de.vakago.warpqueue">
+    <Extension Id="com.cepangularstarter.helloworld">
       <DispatchInfo >
         <Resources>
           <MainPath>./client/index.html</MainPath>
@@ -28,7 +28,7 @@
         </Lifecycle>
         <UI>
           <Type>Panel</Type>
-          <Menu>Analysis Queue</Menu>
+          <Menu>Hello World</Menu>
           <Geometry>
             <Size>
               <Height>600</Height>

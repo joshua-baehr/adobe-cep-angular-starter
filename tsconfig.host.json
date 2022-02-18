@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "allowJs": true,
+    "noLib": true,
+    "types": ["types-for-adobe/Premiere/2018"],
+    "removeComments": true,
+    "target": "ES3",
+    "outDir": "dist/jsx"
+  },
+  "files": ["src/host/index.ts"],
+  "exclude": ["./node_modules"]
+}

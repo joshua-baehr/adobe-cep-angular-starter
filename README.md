@@ -1,27 +1,15 @@
-# CepAngularStarter
+# Introduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+This is a starter template for developing Adobe CEP extensions using Angular and Spectrum CSS.
+Missing ES5 and ES6 features in Adobe's ExtendScript are polyfilled. The host code (JSX) can be written in typescript and is then transpiled to ExtendScript.
 
-## Development server
+_npm run watch_ automatically loads the extension in the respective Adobe solutions and "live reloads" the code whenever saving a file while developing. If you are using macOS, adapt the path in the _package.json_ file.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Technologies used:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Extendscript-es5-shim-ts](https://github.com/ExtendScript/extendscript-es5-shim) and [extendscript-es6-shim-ts](https://github.com/ExtendScript/extendscript-es6-shim) for polyfilling ExtendScript
+- [CSInterface-TS](https://github.com/BrightShadow/CSInterface-TS) to add the [CSInterface](https://github.com/Adobe-CEP/CEP-Resources) library with typings
+- [Spectrum-CSS](https://github.com/adobe/spectrum-css) to adapt the Adobe design standards in the extension
+- [Types-for-Adobe](https://github.com/aenhancers/Types-for-Adobe) to get TypeScript types for the respective Adobe products
+- [Webpack-livereload-plugin](https://github.com/statianzo/webpack-livereload-plugin) and [webpack-watch-files-plugin](https://github.com/Fridus/webpack-watch-files-plugin) for reloading the plugin panel on code changes
+- [Angular](https://github.com/angular/angular)
