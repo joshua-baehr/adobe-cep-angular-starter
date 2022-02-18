@@ -13,3 +13,7 @@ _npm run watch_ automatically loads the extension in the respective Adobe soluti
 - [Types-for-Adobe](https://github.com/aenhancers/Types-for-Adobe) to get TypeScript types for the respective Adobe products
 - [Webpack-livereload-plugin](https://github.com/statianzo/webpack-livereload-plugin) and [webpack-watch-files-plugin](https://github.com/Fridus/webpack-watch-files-plugin) for reloading the plugin panel on code changes
 - [Angular](https://github.com/angular/angular)
+
+
+### Screenshot
+![Hello World Panel](https://user-images.githubusercontent.com/18399771/154753703-58a442d5-bb5a-4b7b-a24c-0e84cc4bda13.png)
