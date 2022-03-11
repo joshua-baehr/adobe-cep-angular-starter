@@ -1,26 +1,37 @@
 import { Injectable } from '@angular/core';
 import { CSInterface, SystemPath } from 'csinterface-ts';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HostService {
   private readonly cs: CSInterface;
+  private appId: string = '';
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.cs = new CSInterface();
-    // Load JXS files
-    this.loadJSX('/../host/polyfills.jsx').then((result) => {
+    this.http.get('appId', { responseType: 'text' }).subscribe((appId) => {
+      this.appId = appId;
+
+      // Load JXS files
       this.loadJSX('/../host/index.jsxbin');
     });
   }
 
   public async helloWorld(): Promise<void> {
-    return this.evalScript('helloWorld()');
+    return this.evalHost('helloWorld()');
   }
 
   public async getProjectName(): Promise<string> {
-    return this.evalScript<string>('getProjectName()');
+    return this.evalHost<string>('getProjectName()');
+  }
+
+  /**
+   * Evaluates a public function or variable of the host by using the build specific id
+   */
+  private async evalHost<T>(hostCall: string): Promise<T> {
+    return this.evalScript<T>(`${this.appId}.${hostCall}`);
   }
 
   /**
