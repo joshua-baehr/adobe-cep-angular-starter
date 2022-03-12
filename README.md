@@ -3,7 +3,7 @@
 This is a starter template for developing Adobe CEP extensions using Angular and Spectrum CSS.
 Missing ES5 and ES6 features in Adobe's ExtendScript are polyfilled. The host code (JSX) can be written in typescript and is then transpiled to ExtendScript.
 
-_npm run watch_ automatically loads the extension in the respective Adobe solutions and "live reloads" the code whenever saving a file while developing. If you are using macOS, adapt the path in the _package.json_ file.
+_npm run start_ automatically loads the extension in the respective Adobe solutions and "live reloads" the code whenever saving a file while developing. If you are using macOS, adapt the path in the _package.json_ file.
 
 ### Technologies used:
 
