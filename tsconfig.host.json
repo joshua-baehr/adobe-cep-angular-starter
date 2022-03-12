@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src/host",
     "allowJs": true,
-    "noLib": true,
-    "types": ["types-for-adobe/Premiere/2018"],
+    "module": "none",
     "removeComments": true,
     "target": "ES3",
-    "outDir": "dist/jsx"
+    "outDir": "dist/jsx",
+    "skipLibCheck": true,
+    "lib": ["ES6"]
   },
-  "files": ["src/host/index.ts"],
+  "files": ["src/host/main.ts", "src/host/polyfills.ts"],
   "exclude": ["./node_modules"]
 }
