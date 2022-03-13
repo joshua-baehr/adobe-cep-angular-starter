@@ -32,7 +32,7 @@ module.exports = (config, options) => {
           console.log("Host bundle created");
           createJSXBin(distPath).then(() => {
             console.log("Generated index.jsxbin");
-            liveReloadPlugin.server.notifyClients([
+            liveReloadPlugin.server?.notifyClients([
               distPath + "/host/index.jsxbin",
             ]);
           });
