@@ -94,7 +94,6 @@ function hostGlobalNamespaceTransform(file, opts) {
         data += getGlobalNamespaceStr(code.matchAll(fieldRegex));
       }
     }
-    fs.writeFileSync("dist/test.js", data);
     this.queue(data);
     this.queue(null);
   }
